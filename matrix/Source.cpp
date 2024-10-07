@@ -3,6 +3,12 @@
 #include "Point.h"
 using namespace std;
 
+ostream& operator<<(ostream& os, const Point& p)
+{
+	os << "Point(" << p.GetX() << ", " << p.GetY() << ")";
+	return os;
+}
+
 // Создать класс для работы с матрицами.
 // Предусмотреть, как минимум, 
 // функции для сложения матриц, 

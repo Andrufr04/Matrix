@@ -5,6 +5,7 @@ class Point
 {
     int x;
     int y;
+    friend ostream& operator<<(ostream& os, const Point& p);
 public:
     Point();
     Point(int a, int b);
@@ -26,7 +27,6 @@ public:
     Point& operator*=(const Point& p);
     Point& operator=(const Point& p);
 
-    friend ostream& operator<<(ostream& os, const Point& p);
     void Print() const;
 };
 

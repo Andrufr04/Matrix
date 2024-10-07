@@ -101,8 +101,3 @@ void Point::Print() const
 	cout << "Point(" << x << ", " << y << ")" << endl;
 }
 
-ostream& operator<<(ostream& os, const Point& p)
-{
-	os << "Point(" << p.GetX() << ", " << p.GetY() << ")";
-	return os;
-}
